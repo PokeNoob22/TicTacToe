@@ -1,0 +1,28 @@
+#container {
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+}
+
+#board {
+    background-color: rgb(247, 247, 247);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.tictactoeBox {
+    width: 49px;
+    height: 49px;
+    border: 1px solid black;
+}
+
+#show {
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
