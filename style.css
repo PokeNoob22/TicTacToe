@@ -1,28 +1,57 @@
-#container {
+html, body {
     width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #title {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #board {
     background-color: rgb(247, 247, 247);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 150px;
-    height: 150px;
+    width: 300px; 
+    height: 300px;
     margin: auto;
 }
 
 .tictactoeBox {
-    width: 49px;
-    height: 49px;
-    border: 1px solid black;
+    position: center;
+    width: 98px;
+    height: 98px;
+    border: 2px solid black;
+    font-size: 98px;
+    text-align: center;
 }
 
 #show {
     display: none;
     text-align: center;
     margin-top: 10px;
+}
+
+#playerContainer {
+    position: absolute;   /* Position it at the top left */
+    top: 10px;
+    left: 10px;
+    color: black;
+
+}
+
+#playerTurn {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
 }
