@@ -7,19 +7,30 @@
     <title>TicTacToe</title>
 </head>
 <body>
+
+    <!-- Player 1 to choose X or O -->
+    <div id="playerChoiceModal">
+        <h2>Player 1, Choose your symbol</h2>
+        <button id="chooseX">X</button>
+        <button id="chooseO">O</button>
+    </div>
+
+
+
     <div id="container">
+        <!-- Player Container for showing whose turn it is -->
+        <div id="playerContainer">
+            <h2 id="playerTurn">Player 1's Turn</h2>
+        </div>
+
         <h1 id="title">TicTacToe</h1>
         <div id="board"></div>
+
+        <p id="winnerMessage"></p>
+        
         <div id="show">
             <button id="prev">Previous</button>
         </div>
-    </div>
-
-    <div id="playerContainer">
-
-        <h2 id="playerTurn">Player 1</h2>
-        <div id="showPlayer"></div>
-
     </div>
     
 
